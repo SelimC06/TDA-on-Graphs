@@ -1,14 +1,14 @@
 ---
 title: "**Applications of Topology in Networks**"
 author: 
-- name: "Cuneyt Gurcan Akcora" 
+- name: "Cuneyt Gurcan Akcora, Selim Coskunuzer" 
   affiliation: "University of Manitoba"
 output: html_document
 ---
 
 <br>
 
-#### [**Part 1**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+1.pptx)
+#### [**Part 1**](https://selimc06.github.io/TDA-on-Graphs/Part1.html)
 
  * Topological Data Analysis–What is it?
  * The Language of TDA
@@ -23,5 +23,4 @@ output: html_document
 #### [**Part 3**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+3.pptx)
 
  * Scaling TDA on Graphs
- * Topology or Geometry?
 
