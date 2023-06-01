@@ -1,0 +1,27 @@
+---
+title: "**Applications of Topology in Networks**"
+author: 
+- name: "Cuneyt Gurcan Akcora" 
+  affiliation: "University of Manitoba"
+output: html_document
+---
+
+<br>
+
+#### [**Part 1**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+1.pptx)
+
+ * Topological Data Analysis–What is it?
+ * The Language of TDA
+ * Persistent Homology in TDA
+ 
+#### [**Part 2**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+2.pptx)
+
+ * Graph Persistent Homology
+ * A few tips and insights for TDA on graphs
+ * Applications of PH on graphs
+
+#### [**Part 3**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+3.pptx)
+
+ * Scaling TDA on Graphs
+ * Topology or Geometry?
+
