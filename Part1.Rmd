@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 #### **What is Topological Data Analysis?**
+
   * Topological Data Analysis (TDA) is primarily driven by the belief that topology and geometry offer a robust approach to extracting qualitative and sometimes quantitative information about the underlying structure of data
   
   * The objective of TDA is to establish mathematically rigorous, statistical, and  algorithmic methods for inferring, analyzing, and leveraging the intricate topological and geometric structures present in data, often represented as point clouds (each dot of the pot) in Euclidean or more general metric spaces.
@@ -33,7 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### **TDA Process in Machine Learning**
 
-#1
+**#1**
 
   * The input data is considered to be a finite collection of points, and there exists a
 measure of distance or similarity between these points
@@ -43,28 +44,28 @@ distance matrix intrinsic to the data.
 
   * The specification of the metric for the data is typically provided as an input or guided by the specific application. However, it is crucial to acknowledge that the choice of metric plays a significant role in uncovering noteworthy topological and geometric characteristics of the data
 
-#2a
+**#2a**
 
   * A continuous shape is constructed to emphasize the underlying topology or geometry of the data
 <center>
-  ![**Topology: This looks like a pot!**](Images/Pot.png){width=35%}
+  ![**Topology: This looks like a pot!**](Images/Pot.png){width=30%}
 </center>
 
-#2b
+**#2b**
 
   * This shape is typically a simplicial complex or a sequence of nested simplicial complexes known as a filtration, which captures the data's structure at various scales.
 <center>
-  ![**Simplicial Complex**](Images/SC.png){width=25%}
+  ![**Simplicial Complex**](Images/SC.png){width=20%}
 </center>
 
-#2c
+**#2c**
 
   * This shape is typically a simplicial complex or a sequence of nested simplicial complexes known as a filtration, which captures the data's structure at various scales.
 <center>
   ![**Filtration**](Images/filtration.png)
 </center>
 
-#2d
+**#2d**
 
   * Simplicial complexes can be seen as higher-dimensional extensions of neighborhood graphs commonly used in standard data analysis and learning algorithms.
   
@@ -73,7 +74,7 @@ distance matrix intrinsic to the data.
   ![](Images/multi.png){width=45%}
 </center>
 
-#3
+**#3**
 
   * The structures constructed on the data provide a means to extract topological or geometric information.
   * It may involve generating rough summaries or approximations that require specific methods, such as persistent homology, to extract relevant information.
@@ -81,7 +82,7 @@ distance matrix intrinsic to the data.
   ![**What do you see in this filtration?**](Images/filtration.png)
 </center>
 
-#4
+**#4**
 
   * The topological and geometric information extracted offers novel sets of features
 and descriptors for the data
@@ -103,7 +104,7 @@ features.
 
 #### **The Language of TDA**
 
-#Simplicial complexes - 1
+**#Simplicial complexes - 1**
 
   * Simplicial complexes can be regarded as an extension of graphs to higher dimensions. They are mathematical entities that possess both **topological** and **combinatorial** characteristics, which makes them particularly valuable for Topological Data Analysis.
   
@@ -111,7 +112,7 @@ features.
     * Topological characteristics: Simplicial complexes have a topological nature, meaning they capture information about the connectivity and spatial relationships between their constituent simplices (e.g., vertices, edges, higher-dimensional faces). They provide a framework to study topological properties such as connectedness, boundaries, holes, and higher-dimensional structures.
     * Combinatorial characteristics: Simplicial complexes have combinatorial properties, which deal with the combinatorial arrangements and relationships between their simplices. These properties involve how the simplices are combined, their intersections, and the inclusion relations between different simplices.
     
-#Simplicial Complexes - 2
+**#Simplicial Complexes - 2**
 
   * Given a set X = {x0,···,xk} C R^d consisting of k + 1 affinely independent points, the k-dimensional simplex σ = [x0,···xk] spanned by X can be defined as the convex hull of X.
   
@@ -121,7 +122,7 @@ features.
   
   * In layman's terms can be understood as a set of points that are not in a straight line or a flat plane.
   
-#Simplicial Complexes - 3
+**#Simplicial Complexes - 3**
 
   * Given a set X {xo,···,Xk} C R^d consisting of k + 1 affinely independent points, the k- dimensional simplex σ = [x0,···,Xk] spanned by X can be defined as the convex hull of X.
   
@@ -132,7 +133,7 @@ features.
   ![](Images/image.png){width=25%}
 </center>
 
-#Simplicial Complexes - 4
+**#Simplicial Complexes - 4**
 
   * Given a set X = {xo,···, xk} < R consisting of k + 1 affinely independent points, the k- dimensional simplex σ = [Xo,···, Xk] spanned by X can be defined as the convex hull of X.
   
@@ -145,7 +146,7 @@ features.
   ![](Images/triangles.png){width=35%}
 </center>
 
-#Simplicial Complexes - 5
+**#Simplicial Complexes - 5**
 
   * A geometric simplicial complex K in R^d is a collection of simplices satisfying the following conditions:
     * Every face of a simplex in K is also a simplex in K.
@@ -155,7 +156,7 @@ features.
   
   * In other words, it is a subset of the vertices of the simplex that defines a smaller simplex within it.
   
-#Simplicial Complexes - 6
+**#Simplicial Complexes - 6**
 
   * For example, in a 3-dimensional simplex (tetrahedron), the faces are triangles, and in a 4-dimensional simplex, the faces are tetrahedra. 
 
@@ -164,7 +165,7 @@ features.
   ![](Images/tetrahedron.png){width=30%}
 </center>
 
-#Simplicial Complexes - 7
+**#Simplicial Complexes - 7**
   
   * The collection of simplices in a simplicial complex K forms a subset of Rd known as the underlying space of K, which inherits the topology of R^d.
   
@@ -174,7 +175,7 @@ features.
     * When we say that a simplicial complex K can be regarded as a topological space based on its underlying space, we mean that we can associate a topological structure to K by considering the topology inherited from its underlying space.
     * The underlying space of K is a subset of Rd that contains all the points corresponding to the vertices, edges, faces, and higher-dimensional simplices of K.
     
-#Building simplicial complexes from data
+**#Building simplicial complexes from data**
 
   * There exist many ways to build simplicial complexes. We present here a few classical examples that are widely used in practice.
   
@@ -196,7 +197,7 @@ features.
   
   * Additionally, if X is a subset of R^d, then Cecha (X) and Rips2a (X) share the same 1- dimensional skeleton, meaning they have the same set of vertices and edges.
 
-#Main Directions in TDA - simplified classification
+**#Main Directions in TDA - simplified classification**
 
   1. Persistent Homology (PH): study of topological shapes that can fit into your data
   <center>
@@ -211,7 +212,7 @@ features.
   
 #### **Persistent Homology in TDA.**
 
-#What is Homology?
+**#What is Homology?**
   
   * Homology, in a nutshell, is a fundamental concept in algebraic topology that provides a powerful tool for formalizing and analyzing topological features of spaces or simplicial complexes in an algebraic manner.
   
@@ -245,7 +246,7 @@ features.
   ![](Images/image2.png)
 </center>
 
-#Homology
+**#Homology**
 
   * To extract summaries of such topological features at a mesoscopic level, we use Betti numbers.
   * Betti-p number of a simplicial complex C of dimension d, denoted by ẞp (C), is defined as
@@ -256,7 +257,7 @@ features.
 ![](Images/Homo2.png){width=55%}
 </center>
 
-#Persistent Homology
+**#Persistent Homology**
 
   * We can increase k as much as we want, however we do not see k>2 holes often in our experiments. 
   
@@ -264,7 +265,7 @@ features.
     * Edelsbrunner, H. and Harer, J., 2008. Persistent homology-a survey. Contemporary mathematics, 453(26), pp.257-282.
     * Otter, N., Porter, M.A., Tillmann, U., Grindrod, P. and Harrington, H.A., 2017. A roadmap for the computation of persistent homology. EPJ Data Science, 6, pp.1-38.
     
-#What is Persistent in PH?
+**#What is Persistent in PH?**
   
   * Persistent homology in a nutshell:
     1. Given X data points in R^d
@@ -275,7 +276,7 @@ features.
         c. Identify which holes persist (i.e., born and survive)
     4. Use the vectorization in ML tasks
     
-#What is filtration?
+**#What is filtration?**
   
   * A filtration of a simplicial complex K is a collection of subcomplexes (Kr)rET that are nested, meaning that for any r0 and rp in the set T, if r is less than or equal to r0, then Kr is a subset of Kro.
   
@@ -288,7 +289,7 @@ ro, then Mr is a subset of Mr0.
   ![](Images/filtration.png)
 </center>
 
-#Persistence Diagrams
+**#Persistence Diagrams**
   
   * In practical situations, the parameter r E T can often be interpreted as a scale parameter.
   
@@ -298,14 +299,14 @@ ro, then Mr is a subset of Mr0.
   
    * The information gathered through filtration is stored in persistence diagrams (PDs), which consist of a multiset of points supported on the open half-plane {(αb, αa) Ɛ R^2: αb <
 
-#PD for 1-dimension holes
+**#PD for 1-dimension holes**
 
 <center>
   ![](Images/PD.png){width=70%}
 </center>
 <br>
 
-#Vectorizations for 0 and 1-dimensional holes
+**#Vectorizations for 0 and 1-dimensional holes**
 
 <center>
   ![](Images/Vector.png){width=75%}
