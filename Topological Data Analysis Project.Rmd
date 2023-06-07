@@ -14,7 +14,7 @@ output: html_document
  * The Language of TDA
  * Persistent Homology in TDA
  
-#### [**Part 2**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+2.pptx)
+#### [**Part 2**](https://selimc06.github.io/TDA-on-Graphs/Part2.html)
 
  * Graph Persistent Homology
  * A few tips and insights for TDA on graphs
