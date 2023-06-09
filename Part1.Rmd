@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
   Topological Data Analysis (TDA) is primarily driven by the belief that topology and geometry offer a robust approach to extracting qualitative and sometimes quantitative information about the underlying structure of data. The objective of TDA is to establish mathematically rigorous, statistical, and  algorithmic methods for inferring, analyzing, and leveraging the intricate topological and geometric structures present in data, often represented as point clouds (each dot of the pot) in Euclidean or more general metric spaces.
  
 <center>
-![](Images/Point_cloud_torus.gif){width=25%}![](Images/Pot.png){width=20%}  
+![](Images/Point_cloud_torus.gif){width=25%}![](Images/Pot.png){width=20%}   
 **Point Cloud** and **Euclidean Space**
 </center>
 
