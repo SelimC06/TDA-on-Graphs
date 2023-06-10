@@ -20,7 +20,7 @@ output: html_document
  * A few tips and insights for TDA on graphs
  * Applications of PH on graphs
 
-#### [**Part 3**](https://www.dropbox.com/home/Sevilla?preview=Akcora+day+3.pptx)
+#### [**Part 3**](https://selimc06.github.io/TDA-on-Graphs/Part3.html)
 
  * Scaling TDA on Graphs
 
