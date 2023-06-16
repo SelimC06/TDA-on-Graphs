@@ -7,6 +7,7 @@ We will introduce the fundamental principles of TDA, enabling students to levera
 The instructional approach emphasizes clarity and accessibility, presenting complex mathematical ideas in an intuitive and digestible manner. By the end of this tutorial, you will have gained a solid understanding of TDA and its applications, equipping them with valuable tools for analyzing and interpreting complex datasets.
 
 If at any point during this tutorial you find yourself feeling lost, please don't hesitate to reach out to us. You can email your concerns or areas that need improvement to cuneyt dot akcora at umanitoba dot ca. Your feedback will be greatly appreciated and will help us enhance the tutorial for a better learning experience.
+
 ## Part 1
 
 #### **What is Topological Data Analysis?**
