@@ -1,26 +1,30 @@
----
-title: "**Applications of Topology in Networks**"
-output: html_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Topological Data Analysis in Networks
+This tutorial aims to provide a comprehensive introduction to Topological Data Analysis (TDA) on networks specifically tailored for Computer Science, Statistics, and Mathematics students. The tutorial is designed to accommodate students with minimal mathematical background, assuming only a basic understanding of concepts such as graphs, nodes, and edges.
+
+We will introduce the fundamental principles of TDA, enabling students to leverage topological techniques for data analysis and exploration. We will cover essential topics such as simplicial complexes, persistence diagrams, and homology, gradually building a strong foundation in TDA concepts and methods.
+
+The instructional approach emphasizes clarity and accessibility, presenting complex mathematical ideas in an intuitive and digestible manner. By the end of this tutorial, you will have gained a solid understanding of TDA and its applications, equipping them with valuable tools for analyzing and interpreting complex datasets.
+
+If at any point during this tutorial you find yourself feeling lost, please don't hesitate to reach out to us. You can email your concerns or areas that need improvement to cuneyt dot akcora at umanitoba dot ca. Your feedback will be greatly appreciated and will help us enhance the tutorial for a better learning experience.
 ## Part 1
-
-<br>
 
 #### **What is Topological Data Analysis?**
 
-  Topological Data Analysis (TDA) is primarily driven by the belief that topology and geometry offer a robust approach to extracting qualitative and sometimes quantitative information about the underlying structure of data. The objective of TDA is to establish mathematically rigorous, statistical, and  algorithmic methods for inferring, analyzing, and leveraging the intricate topological and geometric structures present in data, often represented as <span style="color:red">point clouds (each dot of the pot)</span> in <span style="color:red">Euclidean</span> or more general <span style="color:red">metric</span> spaces.
+Topological Data Analysis (TDA) serves as the core toolkit utilized by mathematicians in the field of Data Science.
+
+TDA is primarily driven by the belief that topology and geometry offer a robust approach to extracting qualitative and sometimes quantitative information about the underlying structure of data. The objective of TDA is to establish mathematically rigorous, statistical, and  algorithmic methods for inferring, analyzing, and leveraging the intricate topological and geometric structures present in data, often represented as <span style="color:red">point clouds (each dot of the pot)</span> in <span style="color:red">Euclidean</span> or more general <span style="color:blue">metric spaces</span>. 
  
-<center>
-<span style="color:red">**Point Cloud**</span> and <span style="color:red">**Euclidean Space**</span>
+ 
+ <center>
+  
+| ![Point Cloud Torus](Images/Point_cloud_torus.gif) | ![Pot](Images/Pot.png) |
+|:---:|:---:|
+| *The Torus shape given as a point cloud* | *A Pot in the Euclidean (3D) Space* |
+
 </center>
 
-<br>
- 
- A metric space (M, ρ) is a set M with a function ρ ∶M × M →$R_+$, called a distance, such that for any x, y, z ∈ M:
+ A metric space (M, ρ) is a set M with a function $$\rho ∶M × M →R_+,$$ called a distance, such that for any x, y, z ∈ M:
  
   * ρ(x, y) ≥ 0 and ρ(x, y) = 0 if and only if x = y,  
   * ρ(x, y) = ρ(y, x) and,  
@@ -276,7 +280,10 @@ $(M_r)_{r\in T}$ that are nested. Similar to the simplicial complex case, if r i
 <br>
 
 **#Vectorizations for 0 and 1-dimensional holes**
+
+<center>
   
 </center>
-  
+  ![](Images/Vector.png){width=75%}
 </center>
+
