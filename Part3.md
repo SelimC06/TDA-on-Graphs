@@ -3,9 +3,6 @@ title: "**Applications of Topology in Networks**"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## Part 3
 
 <br>
@@ -62,7 +59,9 @@ Our results can be generalized to the persistent homology defined with a filteri
   
   <span style="color:red">Illustration - CoralTDA</span>   
   Compute k-core decomposition of nodes, and then select cores to be used
-
+<center>
+  ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/b00e2470-03eb-4ae9-b910-86d9f1b775fc){width=30%}
+</center>
 **#2.4	Coral Decomposition offers a way (PrunIT)**
 
   <span style="color:red">Origins</span>  
@@ -80,20 +79,28 @@ Our results can be generalized to the persistent homology defined with a filteri
   <span style="color:red">Example - PrunIT</span>  
   Vertex 3 dominates vertices 1 and 2 because all neighbors of 1 or 3 are neighbors of 3. There are no other dominated vertices.
   
+  
+  <span style="color:red">Illustration - PrunIT</span> 
+  Compute node activations, and then select which nodes are dominated.
+<center>
+  ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/2399ce0b-6a84-4e90-a3e1-f2ea77bedc89){width=30%}
+  </center>
 **#2.5	Evaluation - Datasets AND LABELS**
 
- <span style="color:red"> TU Datasets (molecular, chemical, biological)</span>
+<img width="400" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/398bdf9d-2046-4e7d-b736-d511ae06d6d7">
+
+  <span style="color:red"> TU Datasets (molecular, chemical, biological)</span>
   
   * Small networks representing molecular, biological shapes
   * From https://chrsmrrs.github.io/datasets/
-
 
   <span style="color:red">Single Graphs (citation, social, co-authorship)</span>
   
   * Medium sized: Citeseer, Cora networks
   * Large sized: Youtube, Amazon, DBLP
   
-  
+![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/877d372e-6754-426d-8afd-a56ba31cd222){width=25%}
+
   <span style="color:red">Facebook, Twitter ego networks (social)</span>
   
   * Ego networks of users
@@ -103,25 +110,39 @@ Our results can be generalized to the persistent homology defined with a filteri
   * OGBN-ARXIV, OGBN-MAG datasets
   
 **#2.5	Evaluation - CoralTDA Reduction in Vertices**
-
+<center>
+<img width="1000" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/e64279d2-6f9a-4f80-b374-7738e47da156">
+</center>
   <span style="color:red">Evaluation</span>  
   CoralTDA vertex reduction in graph and node classification datasets (higher is better). Reduction values are averages from graph instances of the datasets (CORA and CITESEER node classification datasets contain a single graph instance only). 
   
   FACEBOOK and TWITTER datasets are reduced by 10% for k > 4, whereas in other datasets graphs are reduced to empty sets.
   
 **#2.5	Evaluation - PrunIT Reduction in Vertices**
-
+<center>
+| ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/f0d5c52a-691b-44ac-a38c-b82e72620fb4){width=65%} | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/e587065b-e76b-48f8-9163-eb6799b36914){width=65%} |
+|:---:|:---:|
+| Vertex reduction by PrunIT algorithm in the superlevel filtration. Results are averages of graph instances from the datasets. | PrunIT reduction in OGB node classification dataset. Each data point is an ego network. Even for large networks, time reduction rates can reach 75% |
+</center>
   <span style="color:red">Evaluation</span>  
   The figures show reduction percentages by the PrunIT algorithm. FIRSTMM and SYNNEW datasets are reduced by less than 10%; however, the other 11 datasets are reduced by at least 35%.
 
 
 **2.5	Evaluation - CoralTDa and PrunIT Reduction**
-
+<center>
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/0d9b2222-e9be-4346-9e35-64c88e839be0) | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/bc015b58-f346-4eac-b1f5-3c97387582f2) |
+  |:---:|:---:|
+  | PrunIt reductions in the number of vertices and edges.| Vertex reduction results for 11 large datasets after the application of PrunIt and CoralTDA algorithms. |
+</center>
   <span style="color:red">Evaluation</span>  
   When we apply both CoralTDA and PrunIt on large networks, even for low cores of 2 and 3, the combined algorithms reach a vertex reduction rate of 78%.
 
 **#2.5	Evaluation - new directions with CoralTDa and PrunIT**
-
+<center>
+| <img width="1000" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/c5dfdb46-fe83-4c00-bc42-e21df1a91d2e"> |
+|:---:|
+|Clustering coefficients vs. number of topological features in Facebook and Twitter datasets. Each data point is a graph instance. We observe hundreds of higher topological features in these datasets which can be highly useful for various graph learning tasks|
+</center>
   <span style="color:red">Theory</span>
   
   * By Kahle’s seminal result [12], to observe nontrivial Betti numbers for higher dimensions in Erdós-Rényi graphs G(n, p), the average degree must be very high. 
