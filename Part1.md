@@ -250,7 +250,7 @@ features.
   | *Betti numbers at increasing dissimilarity scales* |
 </center>
 <center>
-  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/dbeec82d-7eb3-4ae0-8c24-7f2fe8fa0979){width=60%} |
+  | ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/dbeec82d-7eb3-4ae0-8c24-7f2fe8fa0979){width=60%} |
   |:---:|
   | Anand, D.V., Meng, Z., Xia, K. and Mu, Y., 2020. Weighted persistent homology for osmolyte molecular aggregation and hydrogen-bonding network analysis. Scientific Reports, 10(1), pp.1-17. |
 </center>
@@ -283,7 +283,7 @@ features.
   The entire complex K is obtained by taking the union of all the subcomplexes $K_r$ for r in T. In a more general sense, a filtration of a topological space M is a collection of subspaces
 $(M_r)_{r\in T}$ that are nested. Similar to the simplicial complex case, if r is less than or equal to $r_0$, then $M_r$ is a subset of $M_{r0}$. The entire space M is obtained by taking the union of all the subspaces $M_r$ for r in T.
 <center>
- ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/270009bb-ef99-42e5-8496-82a383d98547)
+ ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/270009bb-ef99-42e5-8496-82a383d98547)
 </center>
 
 **#Persistence Diagrams**
@@ -299,7 +299,7 @@ $(M_r)_{r\in T}$ that are nested. Similar to the simplicial complex case, if r i
 **#PD for 1-dimension holes**
 
 <center>
-  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/76649d35-389d-413b-9608-c0276e6f39ca){width=60%} |
+  | ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/76649d35-389d-413b-9608-c0276e6f39ca){width=60%} |
   |:---:|
   
   Krishnapriyan, A.S., Montoya, J., Haranczyk, M., Hummelshøj, J. and Morozov, D., 2021. Machine learning with persistent homology and chemical word embeddings improves prediction accuracy and interpretability in metal-organic frameworks. Scientific reports, 11(1), p.8888.
