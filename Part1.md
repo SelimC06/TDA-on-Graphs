@@ -25,7 +25,7 @@ TDA is primarily driven by the belief that topology and geometry offer a robust 
 
 </center>
 
- A metric space (M, ρ) is a set M with a function $$\rho ∶M × M →R_+,$$ called a distance, such that for any x, y, z ∈ M:
+ A metric space (M, ρ) is a set M with a function $\rho ∶M × M →R_+,$ called a distance, such that for any x, y, z ∈ M:
  
   * ρ(x, y) ≥ 0 and ρ(x, y) = 0 if and only if x = y,  
   * ρ(x, y) = ρ(y, x) and,  
@@ -46,21 +46,29 @@ measure of distance or similarity between these points. This distance can be det
 
   A continuous shape is constructed to emphasize the underlying <span style="color=red">topology</span> or geometry of the data
 <center>
-  
+  | ![Pot](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/0f1d5b70-8583-4b3f-932b-115ebc509e54){width=40%} |
+  |:---:|
+  | *Topology: This looks like a pot!* |
 </center>
 
 **#2b**
 
   This shape is typically a <span style="color:red">simplicial complex</span> or a sequence of nested simplicial complexes known as a filtration, which captures the data's structure at various scales.
 <center>
-  
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/b12b29db-8b84-4332-8183-e5d50c09325b){width=40%} |
+  |:---:|
+  | <span style="color:red">*simplicial complex*</span> |
+  <span style="color:gray">Image:wikipedia</span> 
 </center>
 
 **#2c**
 
   This shape is typically a simplicial complex or a sequence of nested simplicial complexes known as a <span style="color:red">filtration</span>, which captures the data's structure at various scales.
 <center>
-  
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/0f793745-5849-4a5b-a2eb-8cbabf97fefc) |
+  |:---:|
+  | <span style="color:red">Filtration</span> |
+  <span style="color:gray">Image: Cavanna, N.J., Jahanseir, M. and Sheehy, D.R., 2015. A geometric perspective on sparse filtrations. arXiv preprint arXiv:1506.03797.</span>
 </center>
 
 **#2d**
@@ -69,14 +77,18 @@ measure of distance or similarity between these points. This distance can be det
   
   The task at hand is to define these structures in a way that is mathematically proven to reflect meaningful information about the data's structure and can be efficiently constructed and manipulated in practical applications.
 <center>
-  
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/7e204b00-cb60-48d7-a14b-79115b6a90f9){wdith=20%} |
+  |:---:|
+  <span style="color:gray">Image: Meng, Z. and Xia, K., 2021. Persistent spectral–based machine learning (PerSpect ML) for protein-ligand binding affinity prediction. Science advances, 7(19), p.eabc5329.</span>
 </center>
 
 **#3**
 
   The structures constructed on the data provide a means to extract topological or geometric information.It may involve generating rough summaries or approximations that require specific methods, such as persistent homology, to extract relevant information.
 <center>
- 
+   | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/0f793745-5849-4a5b-a2eb-8cbabf97fefc) |
+  |:---:|
+  | *What do you see in this filtration?* |
 </center>
 
 **#4**
@@ -118,7 +130,9 @@ features.
   
   Mathematically, an n-dimensional simplex is defined as the convex hull of (n + 1) affinely independent points in n-dimensional space. In other words, it is the smallest convex shape or region that contains these points. For example, a 1-dimensional simplex is a line segment, a 2-dimensional simplex is a triangle, a 3-dimensional simplex is a tetrahedron, and so on.
 <center>
-  
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/6515b9b0-26f1-4cdf-a0fe-a372f11dffa2){width=60%} |
+  |:---:|
+  <span style="color:gray">Image: Robert Laurini</span>
 </center>
 
 **#Simplicial Complexes - 4**
@@ -127,7 +141,9 @@ features.
   
   Mathematically, an n-dimensional <span style="color:red">simplex</span> is defined as the convex hull of (n + 1) affinely independent points in n-dimensional space. In other words, it is the smallest convex shape or region that contains these points. For example, a 1-dimensional simplex is a line segment, a 2-dimensional simplex is a triangle, a 3-dimensional simplex is a tetrahedron, and so on.
 <center>
- 
+ | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/2f6433c5-29e0-4fee-9681-b127e14b3d92){width=60%} |
+ |:---:|
+ <span style="color:gray">Image: https://velog.io/@shlee0125</span>
 </center>
 
 **#Simplicial Complexes - 5**
@@ -145,7 +161,7 @@ features.
 
   The faces of a simplex are simplices themselves, but of lower dimension.
 <center>
-  
+  | ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/7f9a35de-dd0c-4805-b3f1-c989035f8d15){width=40%} |
 </center>
 
 **#Simplicial Complexes - 7**
@@ -162,9 +178,9 @@ features.
   
   Suppose we have a set of points, X, in a metric space (M, p), and a real number α ≥ 0. The Vietoris-Rips complex, denoted as $Rips_a(X)$, consists of simplices $[x_0,···, X_k]$ satisfying the condition that the distance between any pair of points, $d_x(x_i, x_j)$, is less than or equal to α for all (i, j).
   
-  Each circle (called a closed ball) has a data point at its center, and the circle radius is the distance from the data point
+  Each circle (called a <span style="color:green">closed ball</span>) has a data point at its center, and the circle radius is the distance from the data point
 <center>
-  
+  <img width="499" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/7b961b85-311a-459c-ab7a-f8de1f7c22fa">
 </center>
   <br>
   However, it's important to note that in general, even when X is a finite subset of $R^d$, $Rips_a(X)$ may not have a geometric realization in $R^d$. In other words, it may have a dimension higher than d.<span style="color:grey">Can you figure out why?</span>
@@ -175,14 +191,17 @@ features.
 
   Persistent Homology (PH): study of topological shapes that can fit into your data
   <center>
+   | ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/e4d9bb48-f3cc-4db7-ae83-368a6e4e8d71){width=50%} |
+   |:---:|
    
+   <span style="color:gray">Image: De Lara, M.L.D., 2023. Persistent homology classification algorithm. PeerJ Computer Science, 9, p.e1195.</span>
   </center>
   
   TDAMapper: the overall shape of your data  
   
   * Both have filtrations and distances, but Mapper studies about how your entire data is shaped and deduces insights from that shape.
   <center>
-    
+    | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/d19b06f4-af9b-4ee0-8033-99e1ee46febd){width=40%} |
   </center>
   
 #### **Persistent Homology in TDA.**
@@ -219,17 +238,21 @@ features.
   * $K_4$ has a loop now; it has a 1-dimensional hole.
 
 <center>
-  
+  | ![](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/e4d9bb48-f3cc-4db7-ae83-368a6e4e8d71){width=50%} |
 </center>
 
 **#Homology**
 
   To extract summaries of such topological features at a mesoscopic level, we use **Betti numbers**. Betti-p number of a simplicial complex C of dimension d, denoted by $ẞ_p(C)$, is defined as
 <center>
-  
+  | <img width="499" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/8891bcb0-ae6f-47b0-879a-662c20fcafec"> |
+  |:---:|
+  | *Betti numbers at increasing dissimilarity scales* |
 </center>
 <center>
-
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/dbeec82d-7eb3-4ae0-8c24-7f2fe8fa0979){width=60%} |
+  |:---:|
+  | Anand, D.V., Meng, Z., Xia, K. and Mu, Y., 2020. Weighted persistent homology for osmolyte molecular aggregation and hydrogen-bonding network analysis. Scientific Reports, 10(1), pp.1-17. |
 </center>
 
 **#Persistent Homology**
@@ -260,7 +283,7 @@ features.
   The entire complex K is obtained by taking the union of all the subcomplexes $K_r$ for r in T. In a more general sense, a filtration of a topological space M is a collection of subspaces
 $(M_r)_{r\in T}$ that are nested. Similar to the simplicial complex case, if r is less than or equal to $r_0$, then $M_r$ is a subset of $M_{r0}$. The entire space M is obtained by taking the union of all the subspaces $M_r$ for r in T.
 <center>
- 
+ ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/270009bb-ef99-42e5-8496-82a383d98547)
 </center>
 
 **#Persistence Diagrams**
@@ -276,15 +299,16 @@ $(M_r)_{r\in T}$ that are nested. Similar to the simplicial complex case, if r i
 **#PD for 1-dimension holes**
 
 <center>
+  | ![image](https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/76649d35-389d-413b-9608-c0276e6f39ca){width=60%} |
+  |:---:|
   
+  Krishnapriyan, A.S., Montoya, J., Haranczyk, M., Hummelshøj, J. and Morozov, D., 2021. Machine learning with persistent homology and chemical word embeddings improves prediction accuracy and interpretability in metal-organic frameworks. Scientific reports, 11(1), p.8888.
 </center>
 <br>
 
 **#Vectorizations for 0 and 1-dimensional holes**
 
 <center>
-  
-</center>
-  ![](Images/Vector.png){width=75%}
+  <img width="589" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/98675fae-b2c1-40f3-9176-35e565de0ab9">
 </center>
 
