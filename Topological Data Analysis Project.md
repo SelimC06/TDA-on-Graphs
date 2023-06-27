@@ -1,5 +1,5 @@
 ## Topological Data Analysis in Networks
-[Cuneyt Gurcan Akcora](Cakcora.github.io), Selim Coskunuzer
+**[Cuneyt Gurcan Akcora](https://cakcora.github.io/), Selim Coskunuzer**
 
 This tutorial aims to provide a comprehensive introduction to Topological Data Analysis (TDA) on networks specifically tailored for Computer Science, Statistics, and Mathematics students. The tutorial is designed to accommodate students with minimal mathematical background, assuming only a basic understanding of concepts such as graphs, nodes, and edges.
 
