@@ -1,11 +1,5 @@
----
-title: "**Applications of Topology in Networks**"
-output: html_document
----
-
+# Topological Data Analysis in Networks
 ## Part 3
-
-<br>
 
 #### **Scaling TDA on Graphs**
 
@@ -152,6 +146,12 @@ Our results can be generalized to the persistent homology defined with a filteri
   <span style="color:red">Real world datasets</span>  
   For a graph order of n = 1000, this implies that the average degree should be between 31 and 100 to have a nontrivial second homology in random networks. However, in real-life networks, our results show that higher Betti numbers are prevalent in much sparser graphs.
 
+
+<br>
+
+
+**Home Page**  
+>>[**Link**](https://selimc06.github.io/TDA-on-Graphs/Topological-Data-Analysis-Project.html)
 
   
 

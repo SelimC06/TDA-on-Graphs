@@ -1,13 +1,4 @@
-
-## Topological Data Analysis in Networks
-This tutorial aims to provide a comprehensive introduction to Topological Data Analysis (TDA) on networks specifically tailored for Computer Science, Statistics, and Mathematics students. The tutorial is designed to accommodate students with minimal mathematical background, assuming only a basic understanding of concepts such as graphs, nodes, and edges.
-
-We will introduce the fundamental principles of TDA, enabling students to leverage topological techniques for data analysis and exploration. We will cover essential topics such as simplicial complexes, persistence diagrams, and homology, gradually building a strong foundation in TDA concepts and methods.
-
-The instructional approach emphasizes clarity and accessibility, presenting complex mathematical ideas in an intuitive and digestible manner. By the end of this tutorial, you will have gained a solid understanding of TDA and its applications, equipping them with valuable tools for analyzing and interpreting complex datasets.
-
-If at any point during this tutorial you find yourself feeling lost, please don't hesitate to reach out to us. You can email your concerns or areas that need improvement to cuneyt dot akcora at umanitoba dot ca. Your feedback will be greatly appreciated and will help us enhance the tutorial for a better learning experience.
-
+# Topological Data Analysis in Networks
 ## Part 1
 
 #### **What is Topological Data Analysis?**
@@ -312,3 +303,9 @@ $(M_r)_{r\in T}$ that are nested. Similar to the simplicial complex case, if r i
   <img width="589" alt="image" src="https://github.com/SelimC06/TDA-on-Graphs/assets/88677758/98675fae-b2c1-40f3-9176-35e565de0ab9">
 </center>
 
+
+<br>
+
+
+**Next Part**  
+>>[**Part 2**](https://selimc06.github.io/TDA-on-Graphs/Part2.html)
